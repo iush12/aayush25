@@ -12,27 +12,19 @@
     
     background-color: aqua;
 }
-.img{
-    margin: -13px;
-    padding: 33px;}
-
-
-.main{
-    
-    color: rgb(252, 252, 252);
-    font-size: 99x;
-display: flex;
-position: absolute;
-font-size: 24px;
-font-family: poppins;
-height: 42px;
-width: ;
-border-radius: 13px;
-left: 399px;
-align-items: center;
-justify-content: center;
-
+.immg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120%;
 }
+.typo{
+color:rgb(255, 255, 255);
+font-family:'Lora';
+font-size: 23px;
+text-align: center;
+}
+
 .flex{
     display:flex ;
 position:a ;
@@ -55,12 +47,10 @@ bottom: -93px;
     margin: 22px;
 }
 .main-b{
-color: rgb(255, 255, 255);
-font-size: 24px;
-font-family: poppins;
-display: flex;
-position: absolute;
-left: 399px;
+    color:rgb(255, 255, 255);
+    font-family:'Lora';
+    font-size: 23px;
+    text-align: center;
 
 }
 .aa{
