@@ -91,9 +91,7 @@ t1{
       left: 197px;
       bottom: -111px;
 }
- /* background: -webkit-linear-gradient(rgb(86, 184, 74), rgb(255, 255, 255));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+
   .contact-button {
       background: linear-gradient(to right, #ff0000, #ffff00); /* gradient from red to yellow */
       border: none;
@@ -113,6 +111,4 @@ t1{
 
 }
     
-    .contact-button:hover {
-      background: linear-gradient(to right, #ffff00, #00ff00); /* gradient from yellow to green on hover */
-    }
+  
