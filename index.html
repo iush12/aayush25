@@ -1,52 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@700&family=Roboto+Mono:ital,wght@1,700&family=Ubuntu+Condensed&display=swap');
-      </style>
-      
-    <meta charset="UTF-8" />
-    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Graphic Designer Portfolio</title>
+<link rel="stylesheet" href="input.css">
+</head>
+<body>
+ 
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="input.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-  
-  </head>
-  
-   <body class=" container ">
- <img src="Frame 7.png" class="immg" alt="" srcset="">
+  <!-- Add your HTML content here -->
+  <div class="cover-image-slider">
+    <img src="Frame 6.png" class="cover-image center">
+    <img src="Frame 7.png" class="cover-image right">
 
-
-<div class="typo">
-  typos </div>
-  <div class="flex "> 
-  </br>
-
-<div class="a "><img src="Slide 4_3 - 3.jpg"></div>
-<div class="b "><img src="Slide 4_3 - 4.jpg"></div>
-<div class="c "><img src="Slide 4_3 - 5.jpg"></div>
-<div class="d "><img src="Slide 4_3 - 7.jpg"></div></div>
-
-
-</div></div>
-
-
-
-
-<div class="main-b">
-  Graphics designs </div>
-
-<img  src="Slide 16_9 - 1.png" alt="Aayush">
-<div class="aa">
-<img src="1ae2be8509f9274d15f1c331d1c6b1a6.jpg" alt="">
-<img src="87a15d971d2df29e84c2e1ad5af25ff8.jpg" alt=""></div>
-<div class="bb"><img src="cd038e3e8e2e7971a4169e15040e4b11.jpg" alt="">
-<img src="e2bb88afa2fcf015aca8e97fdadc8d1a.jpg" alt=""></div>
-<div class="cc"><img src="e465cf53ab42c5644c2d352059c0f0e1.jpg" alt=""></div>
-<img src="fe56ddb679eda9afd26ff9aca3c42dbe.jpg" alt=""></div>
+    <img src="Frame 6.png" class="cover-image left">
 </div>
-<div class="contact">Contact me</div></body> 
+<h2>Typograhies</h2>
+<div class="typo">
+   
+      <img src="images/Slide 4_3 - 3.jpg" class="typo aa" alt="">
+      <img src="images/Slide 4_3 - 4.jpg" class="typo bb" alt="">
+      <img src="images/Slide 4_3 - 5.jpg" class="typo cc"alt="">
+      <img src="images/Slide 4_3 - 7.jpg" class="typo dd" alt="">
+</div>
+
+<div class="first">
+     <t1>I AM AYUSH</t1> 
+      <div class="ftext">Graphic Designer</div>
+      <button class="contact-button">Contact Us</button>
+
+</div>
+
+
+
+
+  <script>
+    // Add your JavaScript code here
+    const coverImages = document.querySelectorAll('.cover-image');
+
+    function slideCoverImages() {
+      coverImages.forEach(image => {
+        if (image.classList.contains('left')) {
+          image.classList.remove('left');
+          image.classList.add('center');
+        } else if (image.classList.contains('center')) {
+          image.classList.remove('center');
+          image.classList.add('right');
+        } else {
+          image.classList.remove('right');
+          image.classList.add('left');
+        }
+      });
+    }
+
+
+    setInterval(slideCoverImages, 4000); // slide cover images every 2 seconds
+  </script>
+</body>
 </html>
