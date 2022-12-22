@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <title>Graphic Designer Portfolio</title>
 <link rel="stylesheet" href="input.css">
+<script src="style.js"></script>
 </head>
 <body>
  
 
-  <!-- Add your HTML content here -->
   <div class="cover-image-slider">
     <img src="Frame 6.png" class="cover-image center">
     <img src="Frame 7.png" class="cover-image right">
@@ -35,26 +35,7 @@
 
 
   <script>
-    // Add your JavaScript code here
-    const coverImages = document.querySelectorAll('.cover-image');
-
-    function slideCoverImages() {
-      coverImages.forEach(image => {
-        if (image.classList.contains('left')) {
-          image.classList.remove('left');
-          image.classList.add('center');
-        } else if (image.classList.contains('center')) {
-          image.classList.remove('center');
-          image.classList.add('right');
-        } else {
-          image.classList.remove('right');
-          image.classList.add('left');
-        }
-      });
-    }
-
-
-    setInterval(slideCoverImages, 4000); // slide cover images every 2 seconds
+ 
   </script>
 </body>
 </html>
